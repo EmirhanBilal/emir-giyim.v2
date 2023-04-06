@@ -1,0 +1,54 @@
+.navigation {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  .logo-container {
+    height: 100%;
+    width: 70px;
+    padding: 15px;
+  }
+
+  .nav-links-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .nav-links {
+      font-size: 20px;
+      cursor: pointer;
+      margin-right: 45px;
+    }
+  }
+  .bag {
+    position: relative;
+
+    span{
+      font-size: 1.2rem;
+      position: absolute;
+      right: -5px;
+      bottom: 0px;
+      background-color: red;
+      width: 25px;
+      border-radius: 30px;
+      text-align: center;
+      color: white;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav-links{
+    margin-right: 14px !important;
+    font-size: 1rem !important;
+  }
+  .bag span{
+    width: 20px !important;
+    bottom: 0 !important;
+    right: -4px !important;
+    border-radius: 40px !important;
+  }
+}
